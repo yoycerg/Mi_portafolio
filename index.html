@@ -1,256 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Portafolio de desarrollo web de Yoycer Gabriel García García. Proyectos, habilidades y contacto.">
-  <title>Yoycer García | Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Yoycer García: desarrollo web, Python, Flask y bases de datos.">
+  <meta name="theme-color" content="#f7f8fc">
+  <title>Yoycer García | Portafolio de desarrollo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
   <header class="site-header">
     <nav class="nav container" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">YG<span>.</span></a>
-      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-links"
-        aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
+      <a class="brand" href="#inicio" aria-label="Yoycer García, inicio"><span class="brand-mark">YG</span><span>Yoycer García</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
-        <a href="#video">Video</a>
-        <a class="nav-contact" href="#contacto">Contacto <span aria-hidden="true">↗</span></a>
+        <a href="#contacto">Contacto</a>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Cambiar idioma a inglés" title="Cambiar idioma">EN</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema"><span id="themeIcon">◐</span></button>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="contenido">
     <section class="hero section container" id="inicio">
-      <div class="hero-content">
-        <p class="eyebrow"><span class="status-dot"></span> DESARROLLADOR EN FORMACIÓN</p>
-        <h1>Hola, soy <span>Yoycer García.</span><br>Construyo ideas para la web.</h1>
-        <p class="hero-copy">Estoy aprendiendo desarrollo web y programación. Me gusta crear proyectos, resolver
-          problemas y seguir desarrollando mis habilidades con cada nuevo desafío.</p>
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> PORTAFOLIO · DESARROLLO WEB</p>
+        <h1>Convirtiendo ideas en <span class="gradient-text">soluciones digitales.</span></h1>
+        <p class="hero-lead">Soy <strong>Yoycer García</strong>, estudiante de programación y desarrollador en formación. Creo proyectos web para aprender, resolver problemas y fortalecer mis habilidades técnicas.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#proyectos">Ver mis proyectos <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="#contacto">Hablemos</a>
+          <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="#contacto">Contactar</a>
         </div>
         <div class="hero-meta">
-          <span>📍 La Granja, Santiago, Chile</span>
-          <span>Disponible para oportunidades de práctica y aprendizaje</span>
+          <span><span class="meta-icon">⌘</span> HTML · CSS · JavaScript</span>
+          <span><span class="meta-icon">⌁</span> Python · Flask · SQL</span>
         </div>
       </div>
-      <div class="hero-art" aria-label="Ilustración abstracta de código" role="img">
-        <div class="art-card art-card-main">
-          <div class="window-dots"><i></i><i></i><i></i></div>
-          <div class="code-lines">
-            <p><span class="code-muted">const</span> developer = {</p>
-            <p class="indent"><span class="code-blue">curious</span>: <span class="code-green">true</span>,</p>
-            <p class="indent"><span class="code-blue">learning</span>: <span class="code-green">"every day"</span>,</p>
-            <p class="indent"><span class="code-blue">building</span>: <span class="code-green">"the future"</span></p>
-            <p>};</p>
+      <div class="hero-visual reveal" aria-label="Resumen de tecnologías">
+        <div class="visual-glow"></div>
+        <div class="code-window">
+          <div class="window-top"><span></span><span></span><span></span><small>developer.py</small></div>
+          <div class="code-content">
+            <p><span class="code-purple">class</span> <span class="code-blue">Developer</span>:</p>
+            <p class="indent"><span class="code-purple">def</span> <span class="code-yellow">__init__</span>(self):</p>
+            <p class="indent2">self.name = <span class="code-green">"Yoycer"</span></p>
+            <p class="indent2">self.focus = [</p>
+            <p class="indent3"><span class="code-green">"Web development"</span>,</p>
+            <p class="indent3"><span class="code-green">"Python & databases"</span></p>
+            <p class="indent2">]</p>
+            <p class="indent"><span class="code-purple">def</span> <span class="code-yellow">keep_learning</span>(self):</p>
+            <p class="indent2"><span class="code-purple">return</span> <span class="code-green">"always"</span></p>
           </div>
-          <div class="art-footer"><span class="pulse"></span> Siempre aprendiendo</div>
+          <div class="window-footer"><span class="status-dot"></span> Aprendiendo y construyendo</div>
         </div>
-        <div class="floating-tag tag-html">HTML</div>
-        <div class="floating-tag tag-css">CSS</div>
-        <div class="floating-tag tag-js">JS</div>
-        <div class="art-orbit orbit-one"></div>
-        <div class="art-orbit orbit-two"></div>
-      </div>
-      <a class="scroll-cue" href="#sobre-mi"><span></span> Desliza para conocer más</a>
-    </section>
-
-    <section class="section section-soft" id="sobre-mi">
-      <div class="container about-grid reveal">
-        <div>
-          <p class="eyebrow">01 / SOBRE MÍ</p>
-          <h2>Aprendiendo hoy,<br><span>construyendo mañana.</span></h2>
-        </div>
-        <div class="about-copy">
-          <p>Soy estudiante de cuarto medio y me estoy formando en programación. He trabajado con tecnologías web y
-            proyectos que me han permitido practicar lógica, diseño de interfaces y organización de datos.</p>
-          <p>Me considero una persona responsable, puntual, paciente y trabajadora. Mi objetivo es seguir aprendiendo,
-            colaborar en proyectos reales y crecer profesionalmente en el área tecnológica.</p>
-          <a class="text-link" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a>
-        </div>
+        <div class="floating-chip chip-html"><b>5</b><span>HTML</span></div>
+        <div class="floating-chip chip-python"><b>Py</b><span>Python</span></div>
+        <div class="floating-chip chip-db"><b>DB</b><span>SQL</span></div>
       </div>
     </section>
 
-    <section class="section container" id="habilidades">
-      <div class="section-heading reveal">
-        <div>
-          <p class="eyebrow">02 / HABILIDADES</p>
-          <h2>Herramientas que <span>estoy desarrollando.</span></h2>
+    <section class="quick-facts container reveal" aria-label="Resumen profesional">
+      <div><strong>Web</strong><span>Interfaces y diseño adaptable</span></div>
+      <div><strong>Backend</strong><span>Fundamentos con Python y Flask</span></div>
+      <div><strong>Datos</strong><span>Consultas y bases de datos SQL</span></div>
+      <div><strong>Enfoque</strong><span>Aprendizaje práctico continuo</span></div>
+    </section>
+
+    <section class="section container" id="sobre-mi">
+      <div class="section-heading reveal"><p class="eyebrow">01 / SOBRE MÍ</p><h2>Curiosidad técnica, <span class="gradient-text">aprendizaje constante.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>Estoy formándome en programación y desarrollo web, con experiencia práctica en ejercicios y proyectos académicos que combinan interfaces, lógica de programación y almacenamiento de información.</p>
+          <p>Me gusta entender cómo funciona cada parte de una aplicación: desde la estructura visual y la interacción del usuario hasta las rutas del servidor y la conexión con una base de datos. También tengo conocimientos básicos de instalación de sistemas operativos y mantenimiento de equipos.</p>
+          <p>Busco seguir creciendo, documentar mejor mis proyectos y adquirir experiencia colaborando en soluciones reales.</p>
         </div>
-        <p>Estas son algunas de las tecnologías y herramientas que he utilizado durante mi aprendizaje.</p>
-      </div>
-      <div class="skills-grid reveal">
-        <article class="skill-card"><span class="skill-icon">5</span>
-          <h3>HTML</h3>
-          <p>Estructura y contenido de páginas web.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">✳</span>
-          <h3>CSS</h3>
-          <p>Diseño visual, estilos y diseño responsivo.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">JS</span>
-          <h3>JavaScript</h3>
-          <p>Interactividad y comportamiento dinámico.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">⌘</span>
-          <h3>Git</h3>
-          <p>Control de versiones para organizar el código.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">GH</span>
-          <h3>GitHub</h3>
-          <p>Repositorios y colaboración en proyectos.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">Py</span>
-          <h3>Python / Flask</h3>
-          <p>Prácticas de programación y desarrollo web.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">DB</span>
-          <h3>Bases de datos</h3>
-          <p>Prácticas de registro y gestión de información.</p>
-        </article>
-        <article class="skill-card"><span class="skill-icon">OS</span>
-          <h3>Windows y Linux</h3>
-          <p>Instalación de sistemas y mantenimiento básico.</p>
-        </article>
+        <aside class="principles-card reveal">
+          <p class="card-kicker">MI FORMA DE TRABAJAR</p>
+          <div class="principle"><span class="principle-number">01</span><div><strong>Responsabilidad</strong><p>Organizar el trabajo y cumplir los objetivos propuestos.</p></div></div>
+          <div class="principle"><span class="principle-number">02</span><div><strong>Resolución de problemas</strong><p>Investigar errores y probar soluciones de forma ordenada.</p></div></div>
+          <div class="principle"><span class="principle-number">03</span><div><strong>Aprendizaje práctico</strong><p>Transformar los conceptos estudiados en proyectos funcionales.</p></div></div>
+        </aside>
       </div>
     </section>
 
-    <section class="section section-soft" id="proyectos">
+    <section class="section skills-section" id="habilidades">
       <div class="container">
-        <div class="section-heading reveal">
-          <div>
-            <p class="eyebrow">03 / PROYECTOS</p>
-            <h2>Algunas cosas que <span>he creado.</span></h2>
-          </div>
-          <p>Proyectos de práctica y aprendizaje. Algunos enlaces se deben completar cuando publiques tus repositorios.
-          </p>
+        <div class="section-heading reveal"><p class="eyebrow">02 / HABILIDADES</p><h2>Herramientas con las que <span class="gradient-text">estoy trabajando.</span></h2><p class="section-intro">Tecnologías que he utilizado en ejercicios, prácticas y proyectos personales o académicos. El nivel puede variar según la herramienta.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-icon icon-web">01</div><h3>Desarrollo frontend</h3><p>Construcción de páginas web estructuradas, estilos visuales y comportamiento interactivo.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript básico</span><span>Diseño responsive</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon icon-backend">02</div><h3>Backend</h3><p>Fundamentos de aplicaciones web, rutas, formularios, sesiones y validación con Python.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>CRUD</span><span>Sesiones</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon icon-data">03</div><h3>Bases de datos</h3><p>Práctica con almacenamiento de información, consultas y conexión desde aplicaciones.</p><div class="tag-list"><span>SQL</span><span>MySQL</span><span>Relaciones</span><span>Consultas</span></div></article>
+          <article class="skill-card reveal"><div class="skill-icon icon-tools">04</div><h3>Herramientas y soporte</h3><p>Control de versiones, uso de editores y tareas básicas de instalación y mantenimiento.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Windows</span><span>Linux</span></div></article>
         </div>
-        <div class="filters reveal" role="group" aria-label="Filtrar proyectos">
-          <button class="filter-button active" data-filter="todos" aria-pressed="true">Todos</button>
-          <button class="filter-button" data-filter="web" aria-pressed="false">Web</button>
-          <button class="filter-button" data-filter="app" aria-pressed="false">Aplicaciones</button>
-          <button class="filter-button" data-filter="datos" aria-pressed="false">Bases de datos</button>
-        </div>
-        <div class="projects-grid" id="projects-grid">
-          <article class="project-card reveal" data-category="app">
-            <div class="project-visual visual-controller"><span class="visual-label">APP · BLUETOOTH</span>
-              <div class="controller-shape"><span class="dpad">✣</span><span class="buttons">● ●<br>● ●</span></div>
-              <span class="visual-caption">Control móvil</span>
-            </div>
-            <div class="project-body">
-              <div class="project-topline"><span>Aplicación móvil</span><span>01</span></div>
-              <h3>Mando de PlayStation desde el celular</h3>
-              <p>Aplicación de práctica que utiliza Bluetooth para convertir el teléfono en un mando para juegos
-                compatibles.</p>
-              <div class="tags"><span>Bluetooth</span><span>Aplicación móvil</span></div>
-              <div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Buscar
-                  repositorio ↗</a></div>
-            </div>
-          </article>
-          <article class="project-card reveal" data-category="web">
-            <div class="project-visual visual-books"><span class="visual-label">WEB · REGISTROS</span>
-              <div class="book-stack"><i></i><i></i><i></i></div><span class="visual-caption">BookHub</span>
-            </div>
-            <div class="project-body">
-              <div class="project-topline"><span>Desarrollo web</span><span>02</span></div>
-              <h3>Sitio de registro de libros</h3>
-              <p>Proyecto de práctica con páginas web para registrar usuarios y libros, trabajando la estructura y el
-                flujo de información.</p>
-              <div class="tags"><span>HTML</span><span>CSS</span><span>Base de datos</span></div>
-              <div class="project-links"><a href="https://github.com/yoycerg/Skillnest_fullStack_Python/tree/main/python/simulacion/BookHub" target="_blank" rel="noreferrer">Buscar
-                  repositorio ↗</a></div>
-            </div>
-          </article>
-          <article class="project-card reveal" data-category="datos">
-            <div class="project-visual visual-database"><span class="visual-label">DATOS · CRUD</span>
-              <div class="db-cylinder"><span></span><span></span><span></span></div><span class="visual-caption">Gestión
-                de información</span>
-            </div>
-            <div class="project-body">
-              <div class="project-topline"><span>Práctica de programación</span><span>03</span></div>
-              <h3>Ejercicios de bases de datos Skillnest</h3>
-              <p>Ejercicios para practicar consultas, registros y operaciones con información dentro de proyectos de
-                aprendizaje.</p>
-              <div class="tags"><span>SQL</span><span>Python</span><span>Flask</span></div>
-              <div class="project-links"><a href="https://github.com/yoycerg/Skillnest_fullStack_Python/tree/main/python/fundamentos/24.-usuarios_crud" target="_blank" rel="noreferrer">Buscar
-                  repositorio ↗</a></div>
-            </div>
-          </article>
-          <article class="project-card reveal" data-category="web">
-            <div class="project-visual visual-emotion"><span class="visual-label">WEB · BIENESTAR</span>
-              <div class="emotion-sun">☼</div><span class="visual-caption">EmocionaMente</span>
-            </div>
-            <div class="project-body">
-              <div class="project-topline"><span>Proyecto web</span><span>04</span></div>
-              <h3>EmocionaMente</h3>
-              <p>Sitio informativo orientado al bienestar emocional, con secciones de libros, música y lugares
-                tranquilos.</p>
-              <div class="tags"><span>HTML</span><span>CSS</span><span>Bootstrap Icons</span></div>
-              <div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Buscar
-                  repositorio ↗</a></div>
-            </div>
-          </article>
-          <article class="project-card reveal" data-category="web">
-            <div class="project-visual visual-task"><span class="visual-label">WEB · ORGANIZACIÓN</span>
-              <div class="task-list"><span>✓ Una tarea</span><span>✓ Otra tarea</span><span>＋ Nueva tarea</span></div>
-              <span class="visual-caption">TaskTrack / PetTrack</span>
-            </div>
-            <div class="project-body">
-              <div class="project-topline"><span></span><span>05</span></div>
-              <h3>Proyectos CRUD con Flask</h3>
-              <p>Prácticas de aplicaciones web para organizar tareas y explorar la gestión de registros con usuarios y
-                datos.</p>
-              <div class="tags"><span>Python</span><span>Flask</span><span>MySQL</span></div>
-              <div class="project-links"><a href="https://github.com/yoycerg/Skillnest_fullStack_Python/tree/main/python/simulacion/TaskTrack" target="_blank" rel="noreferrer">Buscar
-                  repositorio ↗</a></div>
-            </div>
-          </article>
-        </div>
-
+        <div class="skills-note reveal"><span class="note-symbol">i</span><p>Mi objetivo es consolidar estas bases y profundizar especialmente en JavaScript, Python, Flask y buenas prácticas de desarrollo.</p></div>
       </div>
     </section>
 
-
-
-    <section class="section contact-section" id="contacto">
-      <div class="container contact-grid reveal">
-        <div>
-          <p class="eyebrow">05 / CONTACTO</p>
-          <h2>¿Creamos algo <span>juntos?</span></h2>
-          <p class="contact-copy">Estoy interesado en seguir aprendiendo, conocer nuevas oportunidades y conectar con
-            personas del mundo tecnológico.</p>
+    <section class="section container" id="proyectos">
+      <div class="section-heading reveal"><p class="eyebrow">03 / PROYECTOS</p><h2>Aprender haciendo.</h2><p class="section-intro">Una selección de proyectos y prácticas. Abre cada ficha para conocer su propósito, funciones y tecnologías.</p></div>
+      <div class="project-toolbar reveal">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="projectSearch" type="search" placeholder="Buscar un proyecto..." aria-label="Buscar proyectos"></label>
+        <div class="filter-group" role="group" aria-label="Filtrar proyectos">
+          <button class="filter-button active" data-filter="todos">Todos</button>
+          <button class="filter-button" data-filter="web">Web</button>
+          <button class="filter-button" data-filter="python">Python / Flask</button>
+          <button class="filter-button" data-filter="otros">Otros</button>
         </div>
-        <div class="contact-card">
-          <span class="contact-label">ESCRÍBEME</span>
-          <a class="contact-email" href="mailto:yoycer23@gmail.com">yoycer23@gmail.com <span>↗</span></a>
-          <div class="contact-divider"></div>
-          <span class="contact-label">ENCUÉNTRAME EN</span>
-          <div class="social-links">
-            <a href="https://github.com/yoycerg" target="_blank" rel="noreferrer">GitHub ↗</a>
-            <a href="www.linkedin.com/in/yoycer-garcía-00308939a" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          </div>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <article class="project-card reveal" data-category="python web" data-search="tasktrack tareas flask python crud usuarios base de datos">
+          <div class="project-cover cover-task"><span class="cover-label">WEB APP</span><div class="mock-task"><div class="mock-line long"></div><div class="mock-task-row"><i></i><span></span></div><div class="mock-task-row"><i></i><span></span></div><div class="mock-task-row"><i></i><span></span></div></div><span class="cover-index">01</span></div>
+          <div class="project-body"><div class="project-topline"><span>Python · Flask</span><span class="project-status">Práctica académica</span></div><h3>TaskTrack</h3><p>Aplicación de gestión de tareas para practicar el flujo completo de una aplicación web conectada a una base de datos.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>SQL</span><span>CRUD</span></div><button class="text-button project-details" data-project="tasktrack">Ver detalles <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="python web" data-search="cinepedia películas flask python formularios usuarios base de datos">
+          <div class="project-cover cover-cine"><span class="cover-label">WEB APP</span><div class="mock-cinema"><div class="film-frame">C</div><div class="film-lines"><i></i><i></i><i></i></div></div><span class="cover-index">02</span></div>
+          <div class="project-body"><div class="project-topline"><span>Python · Flask</span><span class="project-status">Práctica académica</span></div><h3>CinePedia</h3><p>Proyecto de práctica orientado a construir una aplicación web organizada en controladores, vistas y lógica de servidor.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>Jinja</span><span>SQL</span></div><button class="text-button project-details" data-project="cinepedia">Ver detalles <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="python web" data-search="bookhub libros registro usuarios base de datos flask sql">
+          <div class="project-cover cover-book"><span class="cover-label">WEB APP</span><div class="mock-books"><i></i><i></i><i></i></div><span class="cover-index">03</span></div>
+          <div class="project-body"><div class="project-topline"><span>Web · Datos</span><span class="project-status">Práctica académica</span></div><h3>BookHub</h3><p>Aplicación de práctica para registrar usuarios y libros, con foco en formularios, manejo de información y operaciones sobre registros.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Python</span><span>SQL</span></div><button class="text-button project-details" data-project="bookhub">Ver detalles <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="web" data-search="emocionamente bienestar emocional libros música mapa santiago html css">
+          <div class="project-cover cover-emociona"><span class="cover-label">SITIO INFORMATIVO</span><div class="mock-emotion"><span>Bienestar</span><div><i></i><i></i><i></i></div></div><span class="cover-index">04</span></div>
+          <div class="project-body"><div class="project-topline"><span>Frontend</span><span class="project-status">Proyecto web</span></div><h3>EmocionaMente</h3><p>Sitio informativo dedicado al bienestar emocional, con secciones de libros, música y un mapa de espacios tranquilos de Santiago.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>Bootstrap Icons</span><span>Diseño responsive</span></div><button class="text-button project-details" data-project="emocionamente">Ver detalles <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="otros" data-search="mando playstation celular bluetooth aplicación móvil videojuegos">
+          <div class="project-cover cover-controller"><span class="cover-label">PROYECTO PERSONAL</span><div class="mock-phone"><div class="phone-screen"><span>GAME</span><div class="controller-shape"><i></i><b></b></div></div></div><span class="cover-index">05</span></div>
+          <div class="project-body"><div class="project-topline"><span>Conectividad</span><span class="project-status">Proyecto de práctica</span></div><h3>Celular como mando</h3><p>Idea/proyecto que utiliza Bluetooth para conectar un teléfono y emplearlo como mando para juegos compatibles con la solución desarrollada.</p><div class="tag-list"><span>Bluetooth</span><span>Aplicación móvil</span><span>Conectividad</span></div><button class="text-button project-details" data-project="mando">Ver detalles <span>↗</span></button></div>
+        </article>
+        <article class="project-card reveal" data-category="python" data-search="pettrack mascotas flask usuarios registro login crud">
+          <div class="project-cover cover-pet"><span class="cover-label">WEB APP</span><div class="mock-pet"><div class="pet-circle">P</div><div><i></i><i></i></div></div><span class="cover-index">06</span></div>
+          <div class="project-body"><div class="project-topline"><span>Python · Flask</span><span class="project-status">Proyecto en desarrollo</span></div><h3>PetTrack</h3><p>Propuesta de aplicación para que usuarios registrados administren la información de sus mascotas, practicando autenticación y CRUD.</p><div class="tag-list"><span>Python</span><span>Flask</span><span>SQL</span><span>Autenticación</span></div><button class="text-button project-details" data-project="pettrack">Ver detalles <span>↗</span></button></div>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>No se encontraron proyectos con esa búsqueda. Prueba con otro término o filtro.</p>
+      <p class="project-footnote">Los proyectos académicos y en desarrollo se identifican como tales. Los enlaces a demos o repositorios se agregarán cuando estén publicados.</p>
+    </section>
 
-        </div>
+    
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="reveal"><p class="eyebrow">05 / CONTACTO</p><h2>¿Hablamos de tecnología?</h2><p>Estoy interesado en seguir aprendiendo, desarrollar proyectos y explorar oportunidades de práctica o crecimiento profesional.</p></div>
+        <div class="contact-card reveal"><div><span class="contact-label">CORREO ELECTRÓNICO</span><a class="email-link" href="mailto:yoycer23@gmail.com">yoycer23@gmail.com</a></div><button class="button button-primary" id="copyEmail">Copiar correo</button><div class="contact-links"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn ↗</a></div></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner"><a class="brand" href="#inicio">YG<span>.</span></a>
-      <p>Diseñado y desarrollado por Yoycer García.</p><a href="#inicio">Volver arriba ↑</a>
-    </div>
-  </footer>
-</body>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#inicio"><span class="brand-mark">YG</span><span>Yoycer García</span></a><p>Construido con HTML, CSS y JavaScript.</p><a href="#inicio" class="back-top">Volver arriba ↑</a></div></footer>
 
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner"><button class="dialog-close" id="dialogClose" aria-label="Cerrar detalles">×</button><p class="eyebrow" id="dialogCategory">DETALLES DEL PROYECTO</p><h2 id="dialogTitle">Proyecto</h2><p class="dialog-summary" id="dialogSummary"></p><h3>Objetivo</h3><p id="dialogObjective"></p><h3>Qué practiqué</h3><ul id="dialogLearning"></ul><h3>Tecnologías</h3><div class="tag-list" id="dialogTech"></div></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
 </html>
